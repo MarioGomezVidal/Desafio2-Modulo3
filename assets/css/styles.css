@@ -16,12 +16,13 @@
 .container2{
     display: flex;
     justify-content: space-around;
+    padding-top: 10px;
 }
 
 .container3{
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .card {
@@ -73,5 +74,5 @@
 }
 
 .imagen-class{
-    width: 400px;
+    width: 300px;
 }
