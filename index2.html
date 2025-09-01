@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container2">
+
+    <div class="card">
+    <img width="80px" src="./assets/img/imagen-mario.jfif" alt="imagen-mario" />
+        <div class="card-body">
+            <h2 class="card-title">Stickers Mario</h2>
+            <input type="number" id="number1" min="0">
+        </div>
+    </div>
+
+    <div class="card">
+    <img width="72px" src="./assets/img/imagen-luigi.jfif" alt="imagen-luigi" />
+        <div class="card-body">
+            <h2 class="card-title">Stickers Luigi</h2>
+            <input type="number" id="number2" min="0">
+        </div>
+    </div>
+
+    <div class="card">
+    <img width="180px" src="./assets/img/browser.webp" alt="imagen-browser" />
+        <div class="card-body">
+            <h2 class="card-title">Stickers Browser</h2>
+            <input type="number" id="number3" min="0">
+        </div>
+    </div>
+
+</div>
+
+<div class="container3">
+ <button
+        onclick="
+        let numero1= Number(document.querySelector('#number1').value)
+        let numero2= Number(document.querySelector('#number2').value)
+        let numero3= Number(document.querySelector('#number3').value)
+        
+        let res = numero1+numero2+numero3
+
+        let h2 = document.querySelector('#resultado')
+        const nombre = 'Llevas ';
+        const apellido = ' stickers';
+        
+
+            if(res > 10){
+                h2.innerHTML = 'Llevas demasiados stickers'
+            }else{
+                h2.innerHTML = nombre+res+apellido
+            }
+
+        
+
+        console.log(numero1 + numero2)
+        "
+      >
+        Verificar
+      </button>
+</div>
+
+<div>
+    <h2 id="resultado" class="container3"></h2>
+</div>
+
+<div class="container2">
+
+<a href="./index.html">
+
+<button>Primera parte</button>
+
+</a>
+
+<a href="./index3.html">
+
+<button>Tercera parte</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
