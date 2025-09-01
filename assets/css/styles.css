@@ -76,3 +76,19 @@
 .imagen-class{
     width: 300px;
 }
+
+#toggle {
+    display: none;
+}
+
+   
+label img {
+    cursor: pointer;
+    border: none;
+    transition: border 0.2s;
+}
+
+  
+#toggle:checked + label img {
+    border: 2px solid red;
+}
